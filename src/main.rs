@@ -31,7 +31,7 @@ fn main() {
     // person3
     println!("\n[person3]");
     let p3_1: person3::Person = person3::json_to_person(JSON1).unwrap();
-    // How to deserialize `null` as `MaybeCompany {value: None}` ?
+    // This line fails. Can't deserialize `null` as `MaybeCompany {value: None}` ?
     // let p3_2: person3::Person = person3::json_to_person(JSON2).unwrap();
     let p3_3: person3::Person = person3::json_to_person(JSON3).unwrap();
 
